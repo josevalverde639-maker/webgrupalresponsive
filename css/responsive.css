@@ -1,0 +1,709 @@
+/* ======================================================
+   1. MÁS DE 1300px — Ancho fijo centrado
+   ====================================================== */
+@media screen and (min-width: 1300px) {
+
+    /* Wrapper general de ancho fijo */
+    body {
+        max-width: 1300px;
+        margin: 0 auto;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    }
+
+    /* El header se mantiene dentro del contenedor */
+    .encabezado,
+    nav {
+        width: 100%;
+    }
+
+    /* El banner e Infos también dentro */
+    .banner {
+        background-attachment: scroll;
+    }
+
+    .Index {
+        background-attachment: scroll;
+    }
+
+    /* Galería: limitar contenedor */
+    .contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Productos en grid de 5 columnas si hay espacio */
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* ======================================================
+   2. TABLET VERTICAL — 768px a 1024px (portrait)
+   ====================================================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* --- NAV --- */
+    nav ul {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    nav ul li a {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    /* --- BANNER (Index) --- */
+    .banner {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        background-attachment: scroll;
+        background-size: cover;
+        gap: 20px;
+    }
+
+    .texto-banner {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .texto-banner h1 {
+        font-size: 28px;
+    }
+
+    .texto-banner p {
+        font-size: 15px;
+    }
+
+    /* Aside lateral debajo del banner */
+    #lateral {
+        width: 90%;
+        border-left: none;
+        border-top: 5px solid white;
+        padding: 20px;
+        text-align: left;
+    }
+
+    #lateral li img {
+        height: 8vh;
+    }
+
+    /* --- INFOS (Index) --- */
+    .Infos {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 5%;
+        gap: 20px;
+    }
+
+    .info,
+    .contacto {
+        width: 90%;
+    }
+
+    /* --- GALERÍA --- */
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .flip-tarjeta {
+        height: 280px;
+    }
+
+    .contenedor {
+        padding: 0 20px;
+    }
+
+    /* --- PRODUCTOS --- */
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 200px;
+        margin: 10px;
+    }
+
+    /* Sobre nosotros content-grid */
+    .content-grid {
+        padding: 40px 5%;
+        gap: 24px;
+    }
+
+    .card {
+        max-width: 280px;
+    }
+
+    /* --- CONTACTO --- */
+    .formulario {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    /* --- HERO SOBRE NOSOTROS --- */
+    .hero-overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section {
+        height: 300px;
+    }
+}
+/* ======================================================
+   3. TABLET HORIZONTAL — 1024px a 1200px (landscape)
+   ====================================================== */
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+
+    /* --- NAV --- */
+    nav ul li a {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    /* --- BANNER --- */
+    .banner {
+        height: 380px;
+        background-attachment: scroll;
+    }
+
+    .texto-banner h1 {
+        font-size: 32px;
+    }
+
+    .texto-banner p {
+        font-size: 15px;
+    }
+
+    #lateral li img {
+        height: 9vh;
+    }
+
+    /* --- INFOS --- */
+    .Infos {
+        padding: 30px 4%;
+        gap: 20px;
+    }
+
+    .info,
+    .contacto {
+        width: 28%;
+    }
+
+    /* --- GALERÍA --- */
+    .proyectos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .flip-tarjeta {
+        height: 290px;
+    }
+
+    .contenedor {
+        padding: 0 30px;
+    }
+
+    /* --- PRODUCTOS --- */
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 200px;
+        margin: 8px;
+    }
+
+    /* --- CONTACTO --- */
+    .formulario {
+        width: 75%;
+        max-width: 600px;
+    }
+
+    /* --- HERO SOBRE NOSOTROS --- */
+    .hero-section {
+        height: 320px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Sobre nosotros content-grid */
+    .content-grid {
+        padding: 40px 8%;
+        gap: 30px;
+    }
+}
+/* ======================================================
+   4. TELÉFONO HORIZONTAL — 481px a 767px (landscape)
+   ====================================================== */
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+
+    /* --- LOGO Y NAV (menú hamburguesa básico) --- */
+    .encabezado {
+        padding: 8px 0;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    /* Dropdown ajustado */
+    .dropdown-menu {
+        min-width: 130px;
+    }
+
+    /* --- BANNER --- */
+    .banner {
+        flex-direction: column;
+        height: auto;
+        min-height: 200px;
+        padding: 20px 10px;
+        background-attachment: scroll;
+        background-size: cover;
+        gap: 15px;
+    }
+
+    .texto-banner {
+        width: 90%;
+        padding: 12px 18px;
+    }
+
+    .texto-banner h1 {
+        font-size: 20px;
+    }
+
+    .texto-banner p {
+        font-size: 12px;
+    }
+
+    /* Aside lateral */
+    #lateral {
+        width: 90%;
+        border-left: none;
+        border-top: 3px solid white;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #lateral li img {
+        height: 6vh;
+    }
+
+    /* --- INFOS --- */
+    .Infos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 4%;
+        gap: 15px;
+    }
+
+    .info,
+    .contacto {
+        width: 45%;
+        font-size: 13px;
+    }
+
+    .info h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    /* --- GALERÍA --- */
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .flip-tarjeta {
+        height: 200px;
+    }
+
+    .flip-atras h3 {
+        font-size: 14px;
+    }
+
+    .flip-atras p {
+        font-size: 11px;
+    }
+
+    .contenedor {
+        padding: 0 10px;
+    }
+
+    .titulo-seccion {
+        font-size: 18px;
+    }
+
+    /* --- PRODUCTOS --- */
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card {
+        width: 160px;
+        margin: 6px;
+    }
+
+    .card img {
+        width: 160px;
+        height: 110px;
+    }
+
+    .productos .card img {
+        height: 110px;
+    }
+
+    /* --- CONTACTO --- */
+    .formulario {
+        width: 90%;
+        max-width: 500px;
+        margin: 10px auto;
+    }
+
+    #tituloFormulario {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* --- HERO SOBRE NOSOTROS --- */
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-overlay p {
+        font-size: 0.85rem;
+    }
+
+    /* Sobre nosotros content-grid */
+    .content-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 5%;
+        gap: 15px;
+    }
+
+    .content-grid .card {
+        max-width: 220px;
+    }
+}
+
+
+/* ======================================================
+   5. TELÉFONO VERTICAL — hasta 480px (portrait)
+   ====================================================== */
+@media screen and (max-width: 480px) {
+
+    /* --- ENCABEZADO / LOGO --- */
+    .encabezado {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    /* --- NAV: menú en columna apilada --- */
+    nav {
+        padding: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 0;
+        border-right: none;
+        border-bottom: 1px solid #333;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 12px 10px;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Dropdown en móvil: se muestra debajo en flujo normal */
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        min-width: unset;
+        border-top: none;
+        border-top: 1px solid #444;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px 20px;
+        font-size: 13px;
+        background-color: #1a1a1a;
+    }
+
+    /* --- BANNER (Index) --- */
+    .banner {
+        flex-direction: column;
+        height: auto;
+        min-height: 280px;
+        padding: 25px 15px;
+        background-attachment: scroll;
+        background-size: cover;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .texto-banner {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .texto-banner h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .texto-banner p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* Aside lateral va debajo del texto */
+    #lateral {
+        width: 95%;
+        border-left: none;
+        border-top: 3px solid white;
+        padding: 15px;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #lateral h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #lateral li img {
+        height: 7vh;
+        display: block;
+        margin-top: 6px;
+    }
+
+    /* --- INFOS (Index) --- */
+    .Infos {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+        gap: 20px;
+    }
+
+    .info {
+        width: 95%;
+    }
+
+    .info h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    .contacto {
+        width: 95%;
+        font-size: 13px;
+    }
+
+    .contacto h1 {
+        font-size: 18px;
+    }
+
+    /* --- FOOTER --- */
+    .footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    /* --- GALERÍA --- */
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .flip-tarjeta {
+        height: 260px;
+    }
+
+    .flip-atras h3 {
+        font-size: 15px;
+    }
+
+    .flip-atras p {
+        font-size: 12px;
+    }
+
+    .flip-tag {
+        font-size: 11px;
+    }
+
+    .contenedor {
+        padding: 0 10px;
+    }
+
+    .titulo-seccion {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    /* --- PRODUCTOS --- */
+    .productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+        margin: 8px 0;
+        display: block;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .productos .card img {
+        width: 100%;
+        height: 180px;
+    }
+
+    /* --- CONTACTO --- */
+    #tituloFormulario {
+        font-size: 16px;
+        padding: 12px 10px;
+        margin-top: 0;
+    }
+
+    .formulario {
+        width: 95%;
+        max-width: 100%;
+        margin: 12px auto;
+        padding: 15px;
+    }
+
+    .seccion {
+        padding: 12px;
+    }
+
+    .boton {
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    #botones {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        height: auto;
+        min-height: 220px;
+    }
+
+    .hero-overlay {
+        padding: 20px 15px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-overlay p {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+
+    .content-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+        gap: 16px;
+    }
+
+    .content-grid .card {
+        max-width: 95%;
+        width: 95%;
+    }
+
+    .content-grid .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .content-grid .card p {
+        font-size: 0.88rem;
+    }
+
+    .Index {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
