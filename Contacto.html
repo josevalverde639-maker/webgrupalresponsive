@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>WEB de Perros</title>
+</head>
+<body class="body-contacto">
+    <header class="encabezado">
+        <div class="logo">🐶</div>
+        <nav class="menu">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
+            <li class="dropdown">
+                <a href="Productos.html">Productos ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="ParaCasa.html">Para casa</a></li>
+                    <li><a href="ParaCalle.html">Para calle</a></li>
+                    <li><a href="ParaPerros.html">Para perro</a></li>
+                </ul>
+            </li>
+            <li><a href="Galeria.html">Galeria</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+    <h1 id="tituloFormulario">Formulario de Peticion de Servicios</h1>
+    <form action="mailto:WebPerrosASIR@gmail.com" class="formulario" method="post">
+        <fieldset class="seccion">
+            <legend>Datos Personales</legend>
+            <label class="campo">Nombre:
+                <input type="text" class="entrada">
+            </label>
+            <label class="campo">Email:
+                <input type="email" class="entrada">
+            </label>
+        </fieldset>
+
+        <fieldset class="seccion">
+            <legend>Genero</legend>
+            <label><input type="radio" name="genero">hombre</label>
+            <label><input type="radio" name="genero">mujer</label>
+        </fieldset>
+
+         <fieldset class="seccion">
+            <legend>Intereses</legend>
+            <label><input type="checkbox">Perros</label>
+            <label><input type="checkbox">Productos</label>
+            <label><input type="checkbox">Otros</label>
+        </fieldset>
+
+        <fieldset class="seccion">
+            <legend>Comentarios</legend>
+            <textarea class="entrada" row="4"></textarea>
+        </fieldset>
+        <div id="botones">
+            <button class="boton enviar" type="submit">Enviar Mensaje</button>
+            <button class="boton borrar" type="reset">Borrar</button>
+        </div>
+    </form>
+    <footer class="footer">
+        &#169 2026 Web de Perros
+    </footer>
+</body>
+</html>
